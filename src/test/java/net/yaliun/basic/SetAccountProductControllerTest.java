@@ -30,9 +30,7 @@ public class SetAccountProductControllerTest {
 	SetAccountProductService service;
     
     @InjectMocks
-    private SetAccountProductController setAccountProductController;
-
-    
+    private SetAccountProductController setAccountProductController;    
 	
 	StringBuilder setAccoutXml;
 
