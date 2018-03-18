@@ -54,7 +54,7 @@ public class SetAccountProductControllerTest {
 	public void testSetAccountProduct() throws Exception {
 				
 		//mockito
-		when(service.sum()).thenReturn(11);
+		when(service.sum()).thenReturn(8);
 		
 		mockMvc.perform(					
 					post("/api/setAccountProduct")
