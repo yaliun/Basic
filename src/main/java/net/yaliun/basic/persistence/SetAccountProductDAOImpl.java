@@ -20,8 +20,6 @@ public class SetAccountProductDAOImpl implements SetAccountProductDAO {
 	
 	@Override
 	public void create(SetAccountProductReqVO vo) {
-		logger.info("SetAccountProductDAOImpl : create start");
 		session.insert(namespace+".create", vo);
-		logger.info("SetAccountProductDAOImpl : create end");
 	}
 }

@@ -22,9 +22,6 @@ public class SetAccountProductController {
 	@RequestMapping(value="/api/setAccountProduct", method=RequestMethod.POST)
 	public SetAccountProductResVO setAccountProduct(@RequestBody SetAccountProductReqVO reqVo){
 		
-		logger.info("/api/setAccountProduct start");
-		logger.info("reqVo : {}",reqVo.toString());
-		
 		service.addProduct(reqVo);
 		
 		int sum = service.sum();
@@ -35,10 +32,6 @@ public class SetAccountProductController {
 		}else{
 			resVo.setResult("FAIL");
 		}		
-		
-		logger.info("resVo : {}",resVo.toString());
-
-		logger.info("/api/setAccountProduct end");
 		
 		return resVo;
 	}

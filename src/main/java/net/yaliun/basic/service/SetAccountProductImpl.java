@@ -18,12 +18,7 @@ public class SetAccountProductImpl implements SetAccountProductService {
 	
 	@Override
 	public void addProduct(SetAccountProductReqVO vo) {
-
-		logger.info("addProduct start");
-		
 		accountDAO.create(vo);
-		
-		logger.info("addProduct end");
 	}
 	
 	@Override
